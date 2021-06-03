@@ -1,0 +1,6 @@
+.about-mv{
+    padding-top: 141px;
+    &__wrap{
+        @include back("../../images/about/about-mv.jpg",742px);
+    }
+}

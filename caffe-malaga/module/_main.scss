@@ -1,0 +1,274 @@
+.main{
+    margin-top:72px;
+    &__about{
+        h2{
+            font-size: 56px;
+            font-family:$font-Vollkorn;
+            font-weight: bold;
+            text-align: center;
+        }
+        &-body{
+            margin-top: 48px;
+            display: flex;
+            &-text{
+                width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top:200px;
+                p{
+                    font-size: 48px;
+                    font-family: $font-SawarabiMincho;
+                }
+            }
+            &-btn{
+                padding-top: 250px;
+                padding-left: 210px;
+                a{
+                    font-size: 32px;
+                    color: $color-text-btn;
+                    font-family:$font-Lato;
+                    text-decoration: none;
+                    background-image: linear-gradient($color-line-gradient, $color-line-gradient),
+                    linear-gradient($color-line, $color-line),
+                    linear-gradient($color-line-b-h, $color-line-b-h);
+                    background-size: 20px 4px, 100% 4px, 0 4px;
+                    background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+                    background-repeat: no-repeat;
+                    transition: background-size 0.3s linear, background-position 0.3s linear;
+                    &:hover {
+                        cursor: pointer;
+                        background-size: 20px 4px, 0 4px, 100% 4px;
+                        background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+                      }
+                }
+            }
+        }
+    }
+    &__menu{
+        margin-top:72px;
+        h2{
+            font-size: 56px;
+            font-family:$font-Vollkorn;
+            font-weight: bold;
+            text-align: center;
+        }
+        &-body{
+            margin-top: 48px;
+            display: flex;
+            &-text{
+                width: 400px;
+                margin-right: auto;
+                margin-left:auto;
+                padding-top: 160px;
+                p{
+                    font-size: 48px;
+                    font-family: $font-SawarabiMincho;
+                }
+            }
+            &-btn{
+                padding-top: 150px;
+                a{
+                    font-size: 32px;
+                    font-family:$font-Lato;
+                    color: $color-text-btn;
+                    text-decoration: none;
+                    background-image: linear-gradient($color-line-gradient, $color-line-gradient),
+                    linear-gradient($color-line, $color-line),
+                    linear-gradient($color-line-b-h, $color-line-b-h);
+                    background-size: 20px 4px, 100% 4px, 0 4px;
+                    background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+                    background-repeat: no-repeat;
+                    transition: background-size 0.3s linear, background-position 0.3s linear;
+                    &:hover {
+                        cursor: pointer;
+                        background-size: 20px 4px, 0 4px, 100% 4px;
+                        background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+                      }
+                }
+            }
+        }
+    }
+    &__access{
+        margin-top:72px;
+        h2{
+            font-size: 56px;
+            font-family:$font-Vollkorn;
+            font-weight: bold;
+            text-align: center;
+        }
+        &-body{
+            margin-top: 48px;
+            display: flex;
+            &-text{
+                width: 400px;
+                margin-right: auto;
+                margin-left: auto;
+                padding-top: 200px;
+                p{
+                    font-size: 48px;
+                    font-family: $font-SawarabiMincho;
+                }
+            }
+            &-btn{
+                padding-top: 100px;
+                padding-left: 210px;
+                a{
+                    font-size: 32px;
+                    font-family:$font-Lato;
+                    color: $color-text-btn;
+                    text-decoration: none;
+                    background-image: linear-gradient($color-line-gradient, $color-line-gradient),
+                    linear-gradient($color-line, $color-line),
+                    linear-gradient($color-line-b-h, $color-line-b-h);
+                    background-size: 20px 4px, 100% 4px, 0 4px;
+                    background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+                    background-repeat: no-repeat;
+                    transition: background-size 0.3s linear, background-position 0.3s linear;
+                    &:hover {
+                        cursor: pointer;
+                        background-size: 20px 4px, 0 4px, 100% 4px;
+                        background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+                      }
+                }
+            }
+        }
+    }
+}
+
+@include medium{
+    .main{
+        &__about{
+            &-body{
+                flex-direction: column;
+                &-img{
+                    img{
+                        width: 100%;
+                    }
+                }
+                &-text{
+                    padding-top: 30px;
+                    p{
+                        font-size: 32px;
+                    }
+                }
+                &-btn{
+                    padding-top: 20px;
+                    padding-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+        &__menu{
+            &-body{
+                flex-direction: column-reverse;
+                &-img{
+                    img{
+                        width: 100%;
+                    }
+                }
+                &-text{
+                    padding-top: 30px;
+                    p{
+                        font-size: 32px;
+                    }
+                }
+                &-btn{
+                    padding-top: 20px;
+                    padding-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+        &__access{
+            &-body{
+                flex-direction: column;
+                &-img{
+                    img{
+                        width: 100%;
+                    }
+                }
+                &-text{
+                    padding-top: 30px;
+                    p{
+                        font-size: 32px;
+                    }
+                }
+                &-btn{
+                    padding-top: 20px;
+                    padding-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@include mq(small){
+    .main{
+        &__about{
+            &-body{
+                flex-direction: column;
+                &-img{
+                    img{
+                        width: 100%;
+                    }
+                }
+                &-text{
+                    padding-top: 10px;
+                    width: 240px;
+                    p{
+                        font-size: 21px;
+                    }
+                }
+                &-btn{
+                    padding-top: 20px;
+                    padding-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+        &__menu{
+            &-body{
+                flex-direction: column-reverse;
+                &-img{
+                    img{
+                        width: 100%;
+                    }
+                }
+                &-text{
+                    padding-top: 10px;
+                    width: 240px;
+                    p{
+                        font-size: 21px;
+                    }
+                }
+                &-btn{
+                    padding-top: 20px;
+                    padding-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+        &__access{
+            &-body{
+                flex-direction: column;
+                &-img{
+                    img{
+                        width: 100%;
+                    }
+                }
+                &-text{
+                    padding-top: 10px;
+                    width: 240px;
+                    p{
+                        font-size: 21px;
+                    }
+                }
+                &-btn{
+                    padding-top: 20px;
+                    padding-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+.access-mv{
+    padding-top: 141px;
+    &__wrap{
+        @include back("../../images/access/access-mv.jpg",742px);
+    }
+}

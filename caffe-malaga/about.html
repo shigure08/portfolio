@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <script type="text/javascript" src="btn.js"></script>
+    <script type="text/javascript" src="header-scroll.js"></script>
+    <script type="text/javascript" src="scroll-animation.js"></script>
+    <script type="text/javascript" src="loading.js"></script>
+    <title>Malaga-About</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="atom-spinner">
+      <div class="spinner-inner">
+        <div class="spinner-line"></div>
+        <div class="spinner-line"></div>
+        <div class="spinner-line"></div>
+        <!--Chrome renders little circles malformed :(-->
+        <div class="spinner-circle">
+          &#9679;
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--loading-->
+    <!--header-->
+    <header class="header">
+        <div class="header__wrap">
+            <h1 class="header__logo">
+              <a href="index.html"><img src="./images/logo.jpg"alt="Malaga"></a>
+            </h1>
+            <span class="header__toggle">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+            <nav class="header__nav">
+                <ul class="header__nav-item">
+                  <li class="header__nav-btn header__nav-item-li"><a href="about.html"><span>About</span><div class="transition"></div></a></li>
+                  <li class="header__nav-btn header__nav-item-li"><a href="menu.html"><span>Menu</span><div class="transition"></div></a></li>
+                  <li class="header__nav-btn header__nav-item-li"><a href="access.html"><span>Access</span><div class="transition"></div></a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+    <!--header-->
+    <!--about-mv-->
+    <div class="about-mv">
+      <div class="about-mv__wrap">
+
+      </div>
+    </div>
+    <!--about-mv-->
+    <!--about-main-->
+      <section class="about-main">
+          <h2 class="scroll-animation-obj scroll-animation-hop">About</h2>
+          <div class="about-main__body">
+              <div class="about-main__body-img scroll-animation-obj scroll-animation-hop">
+                  <img src="./images/about/about-main01.png"alt="">
+              </div>
+              <div class="about-main__body-text scroll-animation-obj scroll-animation-hop">
+                  <h3>100種類を超えるコーヒー。</h3>
+                  <p>Malagaでは世界中から取り寄せた100種類以上のコーヒーを楽しめます。<br><br>
+                    味や香りをお伝え頂ければ、お客様に合ったコーヒーをお届けします。
+                    </p>
+              </div>
+          </div>
+          <div class="about-main__body--reverse">
+            <div class="about-main__body-text scroll-animation-obj scroll-animation-hop">
+                <h3>スペイン・サンセバスティアン仕込みの創作料理。</h3>
+                <p>Malagaには食の都スペイン・サンセバスティアンで修行を積んだシェフが多数在籍しており、サンセバスティアン仕込みの創作料理を楽しむことができます。</p>
+            </div>
+            <div class="about-main__body-img scroll-animation-obj scroll-animation-hop">
+                 <img src="./images/about/about-main02.png"alt="">
+            </div>
+        </div>
+      </section>
+    <!--about-main-->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__wrap">
+          <a class="footer__logo"href="index.html"> <span>Malaga</span><br>Cafe & Dining</a>
+          <div class="footer__sns">
+            <a href="">
+              <img src="./images/twitter-w.png">
+            </a>
+            <a href="">
+              <img src="./images/instagram-w.png">
+            </a>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+</body>
+</html>

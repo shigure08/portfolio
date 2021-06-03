@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <script type="text/javascript" src="btn.js"></script>
+    <script type="text/javascript" src="header-scroll.js"></script>
+    <script type="text/javascript" src="scroll-animation.js"></script>
+    <script type="text/javascript" src="loading.js"></script>
+    <title>Malaga-About</title>
+</head>
+<body>
+  <!--loading-->
+  <div id="loading">
+    <div class="atom-spinner">
+      <div class="spinner-inner">
+        <div class="spinner-line"></div>
+        <div class="spinner-line"></div>
+        <div class="spinner-line"></div>
+        <!--Chrome renders little circles malformed :(-->
+        <div class="spinner-circle">
+          &#9679;
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--loading-->
+    <!--header-->
+    <header class="header">
+        <div class="header__wrap">
+            <h1 class="header__logo">
+              <a href="index.html"><img src="./images/logo.jpg"alt="Malaga"></a>
+            </h1>
+            <span class="header__toggle">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+            <nav class="header__nav">
+                <ul class="header__nav-item">
+                  <li class="header__nav-btn header__nav-item-li"><a href="about.html"><span>About</span><div class="transition"></div></a></li>
+                  <li class="header__nav-btn header__nav-item-li"><a href="menu.html"><span>Menu</span><div class="transition"></div></a></li>
+                  <li class="header__nav-btn header__nav-item-li"><a href="access.heml"><span>Access</span><div class="transition"></div></a></li>
+                </ul>
+              </nav>
+        </div>
+    </header>
+    <!--header-->
+    <!--access-mv-->
+    <div class="access-mv">
+      <div class="access-mv__wrap">
+
+      </div>
+    </div>
+    <!--access-mv-->
+    <!--access-main-->
+      <section class="access-main">
+          <h2 class="scroll-animation-obj scroll-animation-hop">About</h2>
+          <div class="access-main__body">
+              <div class="access-main__body-img scroll-animation-obj scroll-animation-hop">
+                  <img src="./images/access/access-main.png"alt="">
+              </div>
+              <div class="access-main__body-text scroll-animation-obj scroll-animation-hop">
+                  <p>
+                    <span>tel.</span>○○○○-○○○-○○○<br>
+                    <span>〒</span>○○○‐○○○○<br>
+                    <span>東京都港区高輪</span>○-○○<br>
+                    <span>E-mail：</span> ○○@○○.jp<br>
+                    <span>Day Off：</span>Tuesday<br>
+                    <span>Lunch Time：</span>11:30-14:00<br>
+                    <span>Dinner Time：</span>17:00-23:00<br>
+                  </p>
+              </div>
+          </div>
+          <div class="access-main__body-map scroll-animation-obj scroll-animation-hop">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12969.375222763927!2d139.7267801914795!3d35.64390016727649!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x17d588068b955a54!2z55m96YeR6auY6Lyq6aeF!5e0!3m2!1sja!2sjp!4v1605875415129!5m2!1sja!2sjp" width="769" height="533" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+      </section>
+    <!--access-main-->
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__wrap">
+          <a class="footer__logo"href="index.html"> <span>Malaga</span><br>Cafe & Dining</a>
+          <div class="footer__sns">
+            <a href="">
+              <img src="./images/twitter-w.png">
+            </a>
+            <a href="">
+              <img src="./images/instagram-w.png">
+            </a>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+</body>
+</html>
