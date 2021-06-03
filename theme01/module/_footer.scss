@@ -1,0 +1,199 @@
+.footer{
+    &__copyright{
+        text-align: center;
+        line-height: 100px;
+        p{
+            font-size: 16px;
+            font-weight: bold;
+            color: $color-footer-copyright;
+        }
+    }
+    &__inner-copy{
+        background:$color-shingle-gra;
+        height: 100px;
+    }
+    &__inner-dynamic{
+        background:$color-footer;
+    }
+    aside{
+        display: flex;
+        max-width: 1170px;
+        margin: 0 auto;
+        ul{
+            width: 260px;
+            padding: 20px;
+        }
+    }
+    .widgettitle{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+/*カテゴリウィジェット*/
+.widget_categories li {
+    display: block;
+    margin-bottom: 2%;  
+    a{
+      position: relative;
+      &::before{
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        position: absolute;
+        top: 50%;
+        left: -1.2rem;
+        content: '\f02b';
+        transform: translateY(-50%);    
+      }
+    }    
+    &:hover{
+      color:$color-shingle-g; 
+    }
+  }
+
+  .widget_categories form{
+    margin:10px;
+    label{
+      cursor: default;
+    }
+  }
+  .widget_categories form select{
+    border: 2px solid black;
+    background: white;
+    cursor: pointer;
+    padding:3%;
+    &:hover{
+      color:$color-g;
+      border: 2px solid $color-g;
+    }
+  }
+
+/*タグウィジェット*/	
+.tagcloud a {
+    font-size: .9rem !important;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    margin-bottom: .5rem;
+    padding: .2rem .5rem;
+    text-decoration: none;
+    color: #03162f;
+    border: 1px solid #000;
+    background-color: #fff;   
+    &:hover{
+      color:$color-shingle-g;
+      border:1px solid $color-shingle-g;
+    }
+  }
+
+  /*メニューウィジェット*/
+.widget_nav_menu li a {
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    padding-left: 1.3rem;
+    color: #333;
+  }
+      
+  .widget_nav_menu li a::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: '\f105';
+    transform: translateY(-50%);
+    color: #03162f;
+  }
+
+/*カレンダーウィジェット*/
+.calendar_wrap {
+    padding: 1rem;
+    border: 1px solid #ddd;
+  }
+      
+  .calendar_wrap table {
+    width: 100%;      
+  }
+
+  .calendar_wrap tbody {
+    text-align: center;
+  }
+      
+  .calendar_wrap caption {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+      
+  .calendar_wrap td {
+    padding: .3rem 0;
+  }
+      
+  .calendar_wrap tfoot td {
+    padding-top: .7rem;      
+  }
+
+  .calendar_wrap tfoot td:last-child {
+    text-align: right;   
+  }
+  .wp-calendar-nav{
+    &:hover{
+      color:$color-shingle-g;
+    }
+  }
+
+//ウィジットアーカイブ
+.widget_archive{
+  li{
+    margin-bottom: 3%;
+  }
+  a{
+    &:hover{
+      color:$color-shingle-g;
+      border-bottom:1px solid $color-shingle-g;
+    }
+  }
+}
+
+.widget_archive{
+  label{
+      cursor: default;
+  }
+} 
+
+.widget_archive select{
+    border: 2px solid black;
+    background: white;
+    cursor: pointer;
+    padding:3%;
+    &:hover{
+      color:$color-g;
+      border: 2px solid $color-g;
+    }
+}
+
+//最近の投稿
+.widget_recent_entries{
+  li{
+    margin-bottom: 3%;
+  }
+  a{
+    &:hover{
+      color:$color-shingle-g;
+    }
+  }
+}
+
+@include mq{
+  .footer aside{
+    flex-direction: column;
+    ul{
+      width: 100%;
+      max-width: 450px;
+    }
+  }
+  .searchfield{
+    max-width: 260px;
+    width:100%;
+  }
+}

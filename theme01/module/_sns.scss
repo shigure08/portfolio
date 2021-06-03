@@ -1,0 +1,94 @@
+.sns{
+  ul{
+    display: flex;
+    padding-top:25px;
+  }
+}
+.sns_btn {
+    display: inline-block;
+    color: #fff;
+    height: 2em;
+    width: 2em;
+    position: relative;
+    text-align: center;
+    clear:both;
+    white-space:nowrap;
+    font-size: 1.5em;
+    border-radius: 0.3125em;
+    box-shadow: 0 0.1875em 0.3125em 0 rgba(0, 0, 0, 0.35);
+    margin:0.2em;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+    overflow: hidden;
+    i {
+      position: absolute;
+      // top: 50%;
+      // transform: translateY(-50%);
+      top: 25%;
+      left: 50%;
+      transform: translateX(-50%);
+      overflow: auto;
+      line-height: normal;
+    }
+    &:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0.3125em 0.9375em 0 rgba(0, 0, 0, 0.4);
+    }
+    
+    &:active {
+      transform: scale(0.9);
+      box-shadow: 0 0.125em 0.1875em 0 rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  
+.btn_facebook {
+    background: $facebook_color;
+    &:hover {
+      color: $facebook_color;
+      background: #fff;
+    }
+  }
+  
+  .btn_twitter {
+    background: $twitter_color;
+    &:hover {
+      color: $twitter_color;
+      background: #fff;
+    }
+  }
+  
+  .btn_instagram {
+    background: $instagram_color;
+    &:hover {
+      color: #f13f79;
+      background: #fff;
+    }
+  }
+  
+  .btn_youtube {
+    background: $youtube_color;
+    &:hover {
+      color: $youtube_color;
+      background: #fff;
+    }
+  }
+
+  @include medium{
+    .sns_btn{
+      font-size: 1em;
+      i{
+        line-height: normal;
+      }
+    }
+  }
+
+  @include mq(small){
+    .sns_btn{
+      font-size: 1em;
+      i{
+        line-height: normal;
+      }
+    }
+  }

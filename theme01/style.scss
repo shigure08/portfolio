@@ -1,0 +1,22 @@
+/*
+theme Name: WordPressテーマ
+Author: 時雨
+Description: original theme
+version： 1.0.0
+*/
+/*@import"./setting/_destyle.scss";*/
+@import"./setting/_setting.scss";
+@import "./mixin/_mixins.scss";
+@import"./module/_header.scss";
+@import"./module/_index.scss";
+@import"./module/_footer.scss";
+@import"./module/_searchform.scss";
+@import"./module/_loop-content.scss";
+@import"./module/_shingle.scss";
+@import"./module/_archive.scss";
+@import"./module/_404.scss";
+@import"./module/_search.scss";
+@import"./module/_related.scss";
+@import"./module/_sns.scss";
+@import"./module/_mv.scss";
+@import"./module/_loading.scss";

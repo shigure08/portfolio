@@ -1,0 +1,27 @@
+.not{
+    margin: 0 auto;
+    max-width: 500px;
+    &__wrapper{
+        text-align:center;
+    }
+    &__header-title{
+        margin-bottom: 20px;
+    }
+    &__content{
+        margin-bottom: 20px;
+        a{
+            margin-top: 10px;
+            transition: 0.2s;
+            border-bottom:2px solid black;
+            &:hover{
+                border-bottom:2px solid $color-article-border-g; 
+            }
+        }
+    }
+}
+.contents-f{
+    margin: 0 auto;
+}
+.error4040.contents{
+    margin:0 auto;
+}

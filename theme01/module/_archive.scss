@@ -1,0 +1,24 @@
+.archive{
+    h1{
+        font-size: 1.6rem;
+        margin-bottom:1.5rem;
+    }
+    p{
+        font-size: .875rem;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@include mq{
+    .archive{
+        h1{
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        p{
+            font-size: .8125rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

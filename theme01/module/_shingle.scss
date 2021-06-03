@@ -1,0 +1,140 @@
+.shingle{
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    &__info{
+        margin-bottom: .5rem;
+    }
+    &__cat-data{
+        a{
+            font-size: .8rem;
+            margin-right: .5rem;
+            padding: .1rem .5rem;
+            text-decoration: none;
+            color: $color-shingle-w;
+            background-color: $color-shingle-g;
+        }
+    }
+    &__author{
+        i{
+            margin-right: .3rem;
+        }
+    }
+    h1{
+        font-size: 1.9rem;
+        margin: 0 0 2rem;
+        letter-spacing: 1px;
+    }
+    h2{
+        font-size: 1.7rem;
+        margin: 3rem 0 2rem;
+        padding: .4rem 0;
+        letter-spacing: 1px;
+        border-bottom: solid 5px $color-shingle-g;
+    }
+    h3{
+        font-size: 1.5rem;
+        margin: 2.5rem 0 1.8rem;
+        padding: 0 1rem;
+        letter-spacing: 1px;
+        border-left: solid 7px $color-shingle-g;
+        background: transparent;
+    }
+    h4{
+        font-size: 1.3rem;
+        margin: 2rem 0 1rem;
+        letter-spacing: 1px;
+    }
+    h5{
+        font-size: 1.1rem;
+        margin: 0 0 .3rem;
+        letter-spacing: 1px;
+    }
+    &__img{
+        margin-bottom:2rem;
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    ul{
+        margin-left: 2rem;
+        list-style: disc;
+    }
+    ol{
+        margin-left: 2rem;
+        list-style: decimal;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    figure{
+        max-width: 100%;
+    }
+    &__tag{
+        text-align: right;
+        ul{
+            font-size: 0;
+            margin-bottom: 0;
+            li{
+                font-size: .9rem;
+                display: inline-block;
+                margin-right: .5rem;
+                vertical-align: middle;
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    padding: .2rem .5rem;
+                    color: #000;
+                    border: 1px solid #000;
+                    &:hover{
+                        color:$color-shingle-g;
+                        border:1px solid $color-shingle-g;
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.shingle__data,
+.shingle__suthor{
+    font-size: .8rem;
+    display: inline-block;
+    margin-right: .5rem; 
+    color: $color-shingle-w;
+}
+
+.shingle p,
+.shingle b,
+.shingle table,
+.shingle ul,
+.shongle ol{
+    font-size: 1rem;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+.shingle p,
+.shingle img,
+.shingle table,
+.shingle ul,
+.shingle ol{
+    margin-bottom: 2rem;
+}
+
+.shingle p,
+.shingle img,
+.shingle table,
+.shingle ul,
+.shingle ol{
+    margin-bottom: 2rem;
+}
+
+.shingle th,
+.shingle td{
+    padding: .6rem;
+    vertical-align: middle;
+    border: 1px solid $color-shingle-w;
+}

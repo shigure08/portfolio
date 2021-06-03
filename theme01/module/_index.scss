@@ -1,0 +1,80 @@
+.container{
+    margin: 0 20px;
+}
+.contents{
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.pagination{
+    text-align: center;
+    margin: 2rem 0;
+    ul{
+        font-size: 0;
+        li{
+            font-size: 1rem;
+            display: inline-block;
+            margin-right: .5rem;
+            &:last-child{
+                border: 0;
+            }
+            a{
+                &:hover{
+                    opacity: .6;
+                }
+            }
+        }
+    }
+}
+
+.pagination .current {
+    color: $color-article-w;
+    background: $color-article-gra;   
+  }
+
+.pagination ul li a,
+.pagination .current {
+  display: block;
+  padding: .5rem .8rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.pagination ul li .prev,
+.pagination ul li .next {
+  border: 0;	
+}
+
+@include mq{
+    .container{
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0;
+    }
+    .contents{
+        margin-bottom: 3%;
+    }
+    .pagination{
+        li{
+            display: none;
+        }
+    }
+    .pagination li.pre,
+    .pagination li.next{
+        display: inline-block;
+        width: 40%;
+        height: 50px;
+        text-align: center;
+    }
+    .pagination li.pre a,
+    .pagination li.next a{
+        width: 100%;
+        text-align: center;
+    }
+    .pagination li.pre span::after{
+        content: "　前の10件へ";
+    }
+    .pagination li.next span::before{
+        content: "次の10件へ　";
+      }
+}

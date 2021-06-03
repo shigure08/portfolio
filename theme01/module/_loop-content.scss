@@ -1,0 +1,110 @@
+.article{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom:1rem;
+    padding:1rem;
+    border:2px solid $color-article-border;
+    transition: 0.2s;
+    display: flex;
+    &:hover{
+        opacity: 70%;
+        border:2px solid $color-article-border-g;
+    }
+    a{
+        display: block;
+        &:after{
+            display: block;
+            clear: both;
+            content: "";
+        }
+    }
+    &__img-wrap{
+        position: relative;
+        float: left;
+        line-height: 1;
+        img{
+            width:240px;
+            height:160px;
+            object-fit: cover;
+        }
+    }
+    &__cat-data{
+        font-size: .75rem;
+        position: absolute;
+        top:0;
+        right:0;
+        padding:.3rem.5rem;
+        background:$color-searchform;
+        color:$color-article-w;
+        border-radius: 20%;
+    }
+    &__texts{
+        margin-left:260px;
+        h2{
+            font-size:1.15rem;
+            margin-bottom:.5rem;
+        }
+        &-date{
+            margin-right: .5rem;
+        }
+        &-author i{
+            margin-right: .3rem;
+        }
+        p{
+            font-size: .8125rem;
+            line-height: 1.7;
+        }
+    }
+}
+
+.article-list .text .article-date,	
+.article-list .text .article-author {
+  font-size: .75rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: .5rem;
+  color: #888;
+}
+.fa-clock{
+    color:$color-article-g;
+}
+.fa-user{
+    color:$color-article-g;
+}
+
+@include mq{
+    .article{
+        padding: 0.5rem;
+        width: 90%;
+        margin-right:0;
+        margin-left: 0;
+        &__img-wrap{
+            img{
+                width: 132px;
+                height: 88px;
+            }
+        }
+        &__cat-data{
+            font-size: .6rem;
+        }
+        &__texts{
+            margin-left:140px;
+            padding:0;
+            h2{
+                font-size:1rem;
+                margin-bottom:0;
+            }
+            p{
+                display: none;
+            }
+            &-author{
+                margin-right: .2rem;
+            }
+        }
+    }
+    .article__texts-date,
+    .article__texts-author{
+        font-size: .625rem;
+        margin-bottom:0;
+    }
+}

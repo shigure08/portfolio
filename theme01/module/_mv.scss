@@ -1,0 +1,31 @@
+.mv{
+    position: relative;
+    width: 100%;   
+    padding-top: 60px;
+}
+
+.mv__img img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.mv iframe{
+    width: 100%;
+}
+.mv__youtube iframe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100% !important;
+}
+
+#youtube_movie{
+    width:100%;
+}
+
+@include mq(small){
+    .mv{
+        padding-top:105px;
+    }
+}

@@ -1,0 +1,31 @@
+.searchform {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.searchfield {
+	width: 260px;
+	background-color: #fff;
+	border-radius: 17px;
+	font-size: 14px;
+	padding: 10px 20px;
+	line-height: 1.1;
+	margin-right: 10px;
+}
+.searchico {
+	font-size: 24px;
+	line-height: 1;
+  transition: 0.5s ease;
+}
+
+.fa-search{
+  &:hover{
+    color:$color-searchform-f;
+  }
+}
+@media screen and (min-width: 768px) {
+	.searchico:hover {
+		color:$color-searchform-f;
+	}
+}
