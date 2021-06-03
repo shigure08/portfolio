@@ -1,0 +1,50 @@
+.mv{
+    @include back("../../images/mv.png",680px);
+    &__wrap{
+        position: relative;
+        margin: 0 auto;
+        max-width: 1250px;
+ }
+ &__texts{
+     position: absolute;
+     top:73px;
+     left:104px;
+     color:$color-t;
+     &-title{
+        font-family: $font-SawarabiMincho;
+        font-size:56px;
+        font-weight: bold;
+        line-height: 0.46;
+        text-shadow:1px 0 0 $color-s,0 1px 0 $color-s,-1px 0 0$color-s,0 -1px 0$color-s,3px 3px 0$color-s;
+        margin-bottom: 0.5em;
+     }
+     &-p{
+        font-family: $font-NotoSans;
+        font-size: 30px;
+        line-height: 0.93;
+        text-shadow:1px 0 0 $color-s,0 1px 0 $color-s,-1px 0 0 $color-s,0 -1px 0 $color-s,3px 3px 0 $color-s;
+        margin-top: 0.5em;
+     }
+ }
+}
+
+@include mq{
+    .mv{
+        width: 100%;
+        height:500px;
+        &__texts{
+            position: absolute;
+            max-width: 300px;
+            top: 90px;
+            left:27px;
+            &-title{
+                font-size: 24px;
+                line-height: 1.2;
+            }
+            &-p{
+                font-size: 16px;
+                line-height: 1.2;
+            }
+        }
+    }
+}

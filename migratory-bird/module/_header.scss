@@ -1,0 +1,144 @@
+/* Loading Block */
+#loading {
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    background-color: $color-f;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  .spinner,
+  .spinner:before,
+  .spinner:after {
+  background: $color-s;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.spinner {
+    color: $color-s;
+    text-indent: -9999em;
+    margin: 250px auto;
+    position: relative;
+    font-size: 11px;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  .spinner:before,
+  .spinner:after {
+    position: absolute;
+    top: 0;
+    content: '';
+  }
+  .spinner:before {
+    left: -1.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  .spinner:after {
+    left: 1.5em;
+  }
+  @keyframes load1 {
+    0%,
+    80%,
+    100% {
+      box-shadow: 0 0;
+      height: 4em;
+    }
+    40% {
+      box-shadow: 0 -2em;
+      height: 5em;
+    }
+  }
+  .loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+.header{
+    &__wrap{
+        @include fcenter;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width:1250px;
+        height:144px;
+    }
+    &__logo{
+        img{
+            width:100%;
+            &:hover{
+                opacity: 50%;
+            }
+        }
+    }
+    &__btn ul li{
+        @include btn;
+        background-color:$color-b;
+    }
+}
+#page_top{
+    width:50px;
+    height: 50px;
+    position: fixed;
+    right: -50px;
+    bottom: 50px;
+    background: black;
+    opacity: 0.6;
+    border-radius: 40%;
+    z-index: 999;
+    a{
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+        &::before{
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          content: '\f102';
+          font-size: 25px;
+          color: #fff;
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          top: -5px;
+          bottom:0;
+          right: 0;
+          left: 0;
+          margin: auto;
+          text-align: center;
+        }
+    }
+  }
+  .scroll-animation{
+      &-obj{
+        opacity: 0;
+        transition: all 0.5s ease 0.5s;
+      }
+      &-hop{
+        *transform: translate(0,60px);
+        /*transform:scale(2,2);*/
+      }
+  }
+
+@include mq{
+    .header{
+        &__btn ul li{
+            @include btn;
+            max-width: 120px;
+            height:40px;
+            font-size: 14px;
+            line-height: 2em;
+        }
+        &__logo{
+            img{
+                max-width: 100px;
+            }
+        }
+    }
+}

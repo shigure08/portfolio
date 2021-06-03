@@ -1,0 +1,79 @@
+@mixin fcenter{
+    display: flex;
+    align-items:center;
+}
+
+@mixin mq($breakpoint:medium){
+    @if $breakpoint == small{
+        @media screen and(max-width:320px){
+            @content;
+        }
+    }@else if $breakpoint == medium{
+        @media screen and(max-width:767px){
+            @content;
+        }
+    }@else if $breakpoint == large{
+        @media screen and(max-width:1024px){
+            @content;
+        }
+    }
+}
+
+@mixin back($img,$height){
+    width:100%;
+    height: $height;
+    background-image: url($img);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin btn{
+    color:$color-f;
+    font-size: 24px;
+    border: 0.3em solid $color-b;
+    border-radius: 85px;
+    width: 255.5px;
+    height: 56px;
+    font-weight: bold;
+    font-family:  $font-Quicksand;
+    text-align: center;
+    line-height: 2.5rem;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+    span {
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        background-color: $color-f;
+        transform: translateY(150%);
+        border-radius: 50%;
+        left: calc((var(--n) - 1) * 25%);
+        transition: 0.5s;
+        transition-delay: calc((var(--n) - 1) * 0.1s);
+        z-index: -1;
+        &:nth-child(1) {
+            --n: 1;
+        }
+        &:nth-child(2) {
+            --n: 2;
+        }
+        &:nth-child(3) {
+            --n: 3;
+        }
+        &:nth-child(4) {
+            --n: 4;
+        }
+    }
+    &:hover {
+        color:$color-b;
+        cursor: pointer;
+    }
+    &:hover span {
+        transform: translateY(0) scale(2);
+    }
+}

@@ -1,0 +1,61 @@
+.footer{
+    background-color: $color-f;
+    height: 131.25px;
+    margin-top: 60px;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding-top: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 960px;
+      }
+      &__nav {
+        display: flex;
+        margin-right:auto;
+        margin-left: auto;
+        margin-bottom: 32px;
+        &-item {
+            padding-right: 10px;
+            a {
+                font-family:$font-NotoSans;
+                font-size: 21px;
+                font-weight: bold;
+                line-height: 1.16;
+                color:$color-b;
+                text-decoration: none;
+              }
+          }
+      }
+      &__cr {
+        text-align: center;
+        font-size: 16px;
+        font-family: $font-NotoSans;
+        line-height: 1.4;
+      }
+}
+
+@include mq{
+    .footer{
+        height: 140px;
+        &__wrap{
+            padding-top: 20px;
+        }
+        &__nav{
+            margin-bottom: 10px;
+            flex-direction: column;
+            &-item{
+                padding-bottom: 3px;
+                a{
+                    font-size: 15px;
+                }
+            }
+        }
+        &__cr{
+            font-size:14px;
+            padding-bottom: 3px;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.download{
+    max-width: 960px;
+    margin: 0 auto;
+    &__title{
+        margin-top: 168px;
+        margin-bottom:99px;
+        text-align: center;
+        font-family:$font-Vollkorn;
+        font-size:88px;
+        font-weight: bold;
+        line-height: 0.318;
+        color:$color-t;
+      }
+      &__m-title{
+        font-family:'Noto Sans', sans-serif;
+        font-size: 24px;
+        line-height: 1.2;
+        color:$color-b;
+        text-align: center;
+      }
+      &__body{
+        @include fcenter;
+        justify-content: space-between;
+        padding-left: 100px;
+          &-wrapper{
+         @include fcenter;
+          margin: 0 auto;
+          &-item{
+            img{
+                display: block;
+            }
+            &-s{
+                display: block;
+            }
+            &-d{
+              @include btn;
+              background-color: $color-b;
+              width: 180px;
+              height: 57.5px;
+              font-size: 21px;
+              margin: 10px auto;
+              line-height: 2em;
+            }
+        }
+          }
+      }
+}
+
+@include mq{
+    .download{
+        &__title{
+            font-size: 48px;
+            margin-top:112px;
+            margin-bottom:29px;
+        }
+        &__body{
+            margin: 0 auto;
+            flex-direction: column;
+            padding-left: 0;
+            &-wrapper{
+                flex-direction: column;
+                &-item{
+                    margin-top: 20px;
+                    img{
+                        margin: 0 auto;
+                    }
+                    &-s{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

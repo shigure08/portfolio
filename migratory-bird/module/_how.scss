@@ -1,0 +1,70 @@
+.how{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    &__title{
+        text-align: center;
+        font-family: $font-Vollkorn;
+        font-size: 88px;
+        font-weight: bold;
+        line-height: 0.318;
+        color: $color-t;
+        margin-top: 112px;
+        margin-bottom:99px;
+    }
+    &__body{
+        @include fcenter;
+        justify-content: space-between;
+        &-item{
+            &-title{
+                font-family: 'Sawarabi Mincho', sans-serif;
+                font-size: 32px;
+                font-weight: bold;
+                line-height: 0.87;
+                color: $color-b;
+                margin-bottom: 36px;
+            }
+            &-img{
+                img{
+                    display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+    &__download{
+        @include btn;
+        background-color: $color-b;
+        width: 435.5px;
+        height: 87.5px;
+        margin: 168px auto;
+        line-height: 3em;
+    }
+}
+
+@include mq{
+    .how{
+        &__title{
+            font-size: 48px;
+            margin-top:112px;
+            margin-bottom:29px;
+            line-height: 0.5;
+        }
+        &__body{
+            flex-direction: column;
+            &-item{
+                &-title{
+                    margin-top: 40px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        &__download{
+            max-width: 240px;
+            font-size: 21px;
+            line-height: 3.5em;
+            margin: 112px auto;
+        }
+    }
+}

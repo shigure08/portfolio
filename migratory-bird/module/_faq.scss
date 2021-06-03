@@ -1,0 +1,101 @@
+.faq{
+    max-width: 960px;
+    margin: 0 auto;
+      &__title{
+        margin-top: 168px;
+        margin-bottom:99px;
+        text-align: center;
+        font-family:$font-Vollkorn;
+        font-size:88px;
+        font-weight: bold;
+        line-height: 0.318;
+        color:$color-t;
+      }
+    &__accordion{
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      color:$color-s;
+      input{
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        &:checked ~ .faq__acontent{
+            max-height:30em;
+        }
+        &[type=checkbox]+label::after{
+          content:'+';
+        }
+        &[type=checkbox]:checked + label::after{
+          transform: rotate(315deg);
+        }
+      }
+      label{
+        font-weight: bold;
+        font-family:'Noto Sans', sans-serif;
+        font-size: 21px;
+        line-height: 3;
+        position: relative;
+        display: block;
+        padding: 0 0 0 1em;
+        cursor: pointer;
+        margin: 0 0 1px 0;
+        background:$color-t;
+        &::after{
+          line-height: 3;
+          position: absolute;
+          top:0;
+          right: 0;
+          display: block;
+          width: 3em;
+          height: 3em;
+          -webkit-transition:all 0.45s;
+          transition: all 0.45s;
+          text-align: center;
+        }
+      }
+    }
+    &__acontent{
+      overflow: hidden;
+      max-height: 0;
+      -webkit-transition: max-height 0.45s;
+      transition: max-height 0.45s;
+      color:$color-t;
+      background:$color-f;
+      p{
+        padding-left: 14px;
+        font-size: 18px;
+        font-family:'Noto Sans', sans-serif;
+        line-height: 1.3;
+        color:$color-b;
+      }
+    }
+  }
+
+  @include mq{
+    .faq{
+        &__title{
+            margin-top:112px;
+            margin-bottom:29px;
+            line-height: 0.5;
+            font-size: 48px;
+        }
+        &__item{
+          margin-top: 40px;
+        }
+        &__accordion{
+          width:100%;
+          label{
+            padding-right: 60px;
+            padding-bottom: 20px;
+            font-size: 16px;
+            line-height: 2;
+          }
+        }
+        &__acontent p{
+          font-size:16px
+        }
+      }
+  }

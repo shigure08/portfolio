@@ -1,0 +1,94 @@
+.about{
+    margin:0 auto;
+    max-width: 1250px;
+    &__title{
+        text-align: center;
+        font-family:$font-Vollkorn;
+        font-size:88px;
+        font-weight: bold;
+        line-height: 0.318;
+        color:$color-t;
+        margin-top: 67px;
+        margin-bottom:99px;
+    }
+    &__body{
+        &-item{
+            @include fcenter;
+            &-texts{
+                padding-left: 150px;
+                padding-right: 40px;
+                padding-bottom: 160px;
+                &-title{
+                    font-family: 'Sawarabi Mincho', sans-serif;
+                    font-size: 40px;
+                    font-weight: bold;
+                    line-height: 1;
+                    color: $color-b;
+                }
+                &-p{
+                    font-family:'Noto Sans', sans-serif;
+                    font-size: 24px;
+                    line-height: 1.3;
+                    color:$color-b;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+    &__download{
+        @include btn;
+        background-color: $color-b;
+        width: 435.5px;
+        height: 87.5px;
+        margin: 168px auto;
+        line-height: 3em;
+    }
+}
+
+@include mq{
+    .about{
+        &__title{
+            font-size: 48px;
+            margin-top: 37px;
+            margin-bottom:69px;
+        }
+        &__body{
+            &-item{
+                flex-direction: column-reverse;
+                overflow: hidden;
+                &-img{
+                    width: 100%;
+                    display: none;
+                    &-s{
+                        @include back("../../images/about-s.jpg",200px);
+                        width: 200px;
+                        border-radius: 50%;
+                    }
+                }
+                &-texts{
+                    margin-top: 20px;
+                    margin-left: 50px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 0px;
+                    max-width: 400px;
+                    &-title{
+                        font-size: 32px;
+                        line-height: 1.3;
+                        font-weight: bold;
+                    }
+                    &-p{
+                        font-size: 21px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        &__download{
+            max-width: 240px;
+            font-size: 21px;
+            line-height: 3.5em;
+            margin: 112px auto;
+        }
+    }
+}
