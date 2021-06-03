@@ -1,0 +1,93 @@
+.menu{
+    margin:0 auto;
+    padding-top:104px;
+    max-width: 960px;
+    &__title{
+        padding-bottom: 72px;
+        font-size: 72px;
+        font-family: $font-Montserrat;
+        font-weight: bold;
+        line-height: o.384;
+        color:$color-title;
+        text-align: center;
+    }
+    &__body{
+        display: flex;
+        &-item{
+            margin: 0 auto;
+            &-img{
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+            &-texts{
+                text-align: center;
+                &-title{
+                    font-size: 26px;
+                    font-family:$font-Lato;
+                    line-height: 1;
+                    font-weight: bold;
+                    &-j{
+                    font-size: 20px;
+                    font-family:$font-Lato;
+                    line-height: 1;
+                    font-weight: bold;
+                    padding-bottom: 10px;
+                    }
+                }
+                &-p{
+                    font-size: 18px;
+                    font-family:$font-NotoSans;
+                    line-height: 1.5;
+                    font-weight: bold;
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+@include medium{
+    .menu{
+        &__title{
+            font-size: 34px;
+        }
+        &__body{
+            &-item {
+                width: calc(30% - 1px);
+                padding-left: 5px;
+                padding-right: 5px;
+                &-texts{
+                    &-title{
+                        font-size: 20px;
+                        &-j{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+
+@include mq(small){
+    .menu{
+        &__title{
+            font-size: 28px;
+        }
+        &__body{
+            flex-direction: column;
+            &-item {
+                &-texts{
+                    &-title{
+                        font-size: 20px;
+                        &-j{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

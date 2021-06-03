@@ -1,0 +1,134 @@
+.shop{
+    text-align: center;
+    margin:0 auto;
+    padding-top:104px;
+    max-width: 960px;
+    &__title{
+        padding-bottom: 72px;
+        font-size: 72px;
+        font-family: $font-Montserrat;
+        font-weight: bold;
+        line-height: o.384;
+        color:$color-title;
+    }
+    &__body{
+        margin: 0 auto;
+        &-wrapper{
+            margin: 0 auto;
+            position: relative;
+        }
+        &-slider{
+            position: relative;
+            width: 700px;
+            margin: 0 auto;
+            &-list{
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                padding-bottom: 66.7%;
+                margin: 0 auto;
+                &-item{
+                    position: absolute;
+                    top: 0;
+                    left:0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    transition: opacity .6s ease-in-out;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        &-texts{
+            margin: 0 auto;
+            padding-top: 20px;
+            text-align: left;
+            width: 600px;
+            &-p{
+                font-size: 21px;
+                font-family: $font-NotoSans;
+                line-height: 1.2;
+                font-weight: bold;
+            }
+        }
+    }
+}
+ .current{
+    opacity: 1;
+ }
+ .buttons{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+ .button{
+    border-radius:20% ;
+    width:32px;
+    height:32px;
+    border:none;
+    outline:none;
+    padding:0;
+    background:transparent center no-repeat;
+    cursor:pointer;
+    opacity:.7;
+    &.prev{
+      background-image: url("../../images/shop-l.png");
+    }
+    &.next{
+      background-image:url("../../images/shop-r.png");
+    }
+    &:hover{
+      opacity:.8;
+    }
+  }
+  
+  @include medium{
+      .shop{
+          &__title{
+                font-size: 34px;
+            }
+          &__body{
+              &-slider{
+                  width: 100%;
+              }
+              &-texts{
+                  width: 100%;
+                  &-p{
+                    padding-right: 30px;
+                    padding-left: 30px;
+                    font-size: 20px;
+                }
+              }
+          }
+      }
+  }
+
+  @include mq(small){
+    .shop{
+        &__title{
+              font-size: 28px;
+          }
+        &__body{
+            &-slider{
+                width: 100%;
+            }
+            &-texts{
+                width: 100%;
+                &-p{
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+  }

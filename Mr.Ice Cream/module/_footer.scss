@@ -1,0 +1,53 @@
+.footer{
+    padding-top: 20px;
+    &__wrap{
+        height: 162px;
+        background-color:$color-title;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 50px;
+    }
+    &__logo{
+        font-size: 32px;
+        font-family: $font-Montserrat;
+        font-weight: bold;
+        line-height: o.384;
+        color: $color-footer;
+    }
+    &__sns{
+        img{
+            width: 55px;
+            padding-right: 10px;
+        }
+    }
+}
+
+@include medium{
+    .footter{
+        width: 100%;
+        &__sns{
+            img{
+                width:100%;
+            }
+        }
+    }
+}
+
+@include mq{
+    .footer{
+        width: 100%;
+        text-align: center;
+        &__logo{
+            font-size: 24px;
+        }
+        &__sns{
+            padding-top: 10px;
+            img{
+                width: 40px;
+            }
+        }
+        &__wrap{
+            flex-direction: column;
+        }
+    }
+}

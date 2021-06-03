@@ -1,0 +1,142 @@
+.about{
+    text-align: center;  
+    padding-top: 40px;
+    padding-bottom: 1200px;
+    margin: 0 auto;
+    max-width: 960px;
+    position: relative;
+    &__title{
+        font-size: 72px;
+        font-family: $font-Montserrat;
+        font-weight: bold;
+        line-height: o.384;
+        color:$color-title;
+    }
+    &__body{
+        max-height: 1400px;
+        &-texts{
+            position: absolute;
+            left: 330px;
+            top:428px;
+            background-color: $color-title;
+            border-radius: 10%;
+            width: 632px;
+            height: 588px;
+            z-index: 1px;
+            &-title{
+                text-align: left;
+                font-size: 40px;
+                font-family: $font-SawarabiMincho;
+                font-weight: bold;
+                line-height: 1.015;
+                color:$color-header;
+                padding:80px 10px 20px 10px;
+            }
+            &-p{
+                margin: 0 auto;
+                padding-top:10px;
+                text-align: left;
+                width: 600px;
+                font-size: 28px;
+                font-family: $font-NotoSans;
+                font-weight: bold;
+                line-height: 1.32;
+                color:$color-header;
+                border-top: solid 6px $color-header;
+            }
+        }
+        &-img{
+            &-1{
+                position: absolute;
+                top:240px;
+                left: 24px;
+                z-index: 2;
+            }
+            &-2{
+                position: absolute;
+                top:807px;
+                z-index: 3;
+            }
+        }
+    }
+}
+
+@include mq("small"){
+    .about{
+        padding-bottom: 600px;
+        &__title{
+            font-size: 28px;
+        }
+        &__body{
+            &-texts{
+                left: 30px;
+                top:200px;
+                width: 250px;
+                height: 370px;
+                &-title{
+                    padding-top: 40px;
+                    font-size: 21px;
+                }
+                &-p{
+                    font-size: 16px;
+                    width:220px;
+                }
+            }
+            &-img{
+                &-1{
+                    top:110px;
+                    img{
+                        width: 100px;
+                    }
+                }
+                &-2{
+                    top:550px;
+                    img{
+                        width:100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include medium{
+    .about{
+        padding-bottom: 650px;
+        &__title{
+            font-size: 34px;
+        }
+        &__body{
+            &-texts{
+                left: 190px;
+                top:200px;
+                width: 270px;
+                height: 370px;
+                &-title{
+                    padding-top: 40px;
+                    font-size: 21px;
+                }
+                &-p{
+                    font-size: 16px;
+                    width:240px;
+                }
+            }
+            &-img{
+                &-1{
+                    top:110px;
+                    left:100px;
+                    img{
+                        width: 150px;
+                    }
+                }
+                &-2{
+                    top:550px;
+                    left:110px;
+                    img{
+                        width:150px;
+                    }
+                }
+            }
+        }
+    }
+}

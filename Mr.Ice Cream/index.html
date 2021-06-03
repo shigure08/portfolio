@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="dist/css/destyle.css"rel="stylesheet">
+    <link href="dist/css/style.css"rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="navi.js"></script>
+    <script type="text/javascript" src="slider.js"></script>
+    <script type="text/javascript" src="scroll-animation.js"></script>
+    <script type="text/javascript" src="loading.js"></script>
+    <title>Mr.Ice Cream</title>
+</head>
+<body>
+  <!-- ローディング画面 -->
+<div id="loading">
+  <div class="sk-cube-grid">
+    <div class="sk-cube sk-cube1"></div>
+    <div class="sk-cube sk-cube2"></div>
+    <div class="sk-cube sk-cube3"></div>
+    <div class="sk-cube sk-cube4"></div>
+    <div class="sk-cube sk-cube5"></div>
+    <div class="sk-cube sk-cube6"></div>
+    <div class="sk-cube sk-cube7"></div>
+    <div class="sk-cube sk-cube8"></div>
+    <div class="sk-cube sk-cube9"></div>
+  </div>
+</div>
+    <!-- header -->
+    <header class="header">
+        <div class="header__wrap">
+            <div class="header__flexbox">
+                <h1 class="header__logo">
+                    <a href="#">
+                        Mr.Ice Cream
+                    </a>
+                </h1>
+                <nav class="header__nav">
+                    <ul class="header__flexbox">
+                      <li><a href="#about" id="about_link_js">About</a></li>
+                      <li><a href="#menu" id="menu_link_js">Menu</a></li>
+                      <li><a href="#shop" id="shop_link_js">Shop</a></li>
+                      <li><a href="#access" id="access_link_js">Access</a></li>
+                    </ul>
+                    <div class="header__flexbox-sns">
+                        <a href="#">
+                            <img  src="./images/twitter.jpg" alt="Twitter">
+                        </a>
+                        <a href="#">
+                            <img  src="./images/instagram.jpg" alt="Instagram">
+                        </a>
+                    </div>
+                  </nav>
+                  <div class="header__sp">
+                    <h1 class="header__sp-logo">
+                      <a href="#">
+                        Mr.Ice Cream
+                      </a>
+                    </h1>
+                    <nav class="header__sp-nav">
+                      <ul class="header__sp-flexbox">
+                        <li><a href="#about" id="about_link_js-sp">About</a></li>
+                        <li><a href="#menu" id="menu_link_js-sp">Menu</a></li>
+                        <li><a href="#shop" id="shop_link_js-sp">Shop</a></li>
+                        <li><a href="#access" id="access_link_js-sp">Access</a></li>
+                      </ul>
+                      <div class="header__sp-flexbox-sns">
+                          <a href="#">
+                              <img  src="./images/twitter.jpg" alt="Twitter">
+                          </a>
+                          <a href="#">
+                              <img  src="./images/instagram.jpg" alt="Instagram">
+                          </a>
+                      </div>
+                    </nav>
+                  </div>
+            </div>
+        </div>
+    </header>
+    <!-- mv -->
+    <div class="mv">
+
+    </div>
+    <!-- about -->
+    <main class="contents-area">
+        <section class="about position-now scroll-animation-obj scroll-animation-hop" id="about">
+          <h2 class="about__title">About</h2>
+          <div class="about__body">
+            <div class="about__body-img-1 scroll-animation-obj scroll-animation-hop">
+              <picture>
+                <img src="./images/about-01.png"alt="">
+              </picture>
+            </div>
+            <div class="about__body-texts scroll-animation-obj scroll-animation-hop">
+              <div class="about__body-texts-title">
+                <span>
+                  洋菓子の本場、フランスのアイスクリームをお届けします。
+                </span>
+              </div>
+              <div class="about__body-texts-p">
+                Mr.Ice Creamでは洋菓子の本場、フランスの技術や食材にこだわったアイスクリームを提供します。<br><br>
+                お客様に高品質なフランスのアイスクリームをお楽しみ頂くために、日々精進しております。
+              </div>
+            </div>
+            <div class="about__body-img-2 scroll-animation-obj scroll-animation-hop">
+              <picture>
+                <img src="./images/about-02.png"alt="">
+              </picture>
+          </div>
+        </section>
+        <!-- menu -->
+        <section class="menu position-now " id="menu">
+          <h2 class="menu__title scroll-animation-obj scroll-animation-hop">Menu</h2>
+          <div class="menu__body">
+            <div class="menu__body-item scroll-animation-obj scroll-animation-hop">
+              <div class="menu__body-item-img">
+                <picture>
+                  <img src="./images/menu-01.jpg"alt="">
+                </picture>
+                <div class="menu__body-item-texts">
+                  <div class="menu__body-item-texts-title">
+                    Strawberry   
+                  </div>
+                  <div class="menu__body-item-texts-title-j">
+                    ストロベリー
+                  </div>
+                  <p class="menu__body-item-texts-p">
+                    カップ ￥400<br>
+                    コーン ￥420
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="menu__body-item scroll-animation-obj scroll-animation-hop">
+              <div class="menu__body-item-img">
+                <picture>
+                  <img src="./images/menu-02.jpg"alt="">
+                </picture>
+                <div class="menu__body-item-texts">
+                  <div class="menu__body-item-texts-title">
+                    Melon  
+                  </div>
+                  <div class="menu__body-item-texts-title-j">
+                    メロン
+                  </div>
+                  <p class="menu__body-item-texts-p">
+                    カップ ￥400<br>
+                    コーン ￥420
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="menu__body-item scroll-animation-obj scroll-animation-hop">
+              <div class="menu__body-item-img">
+                <picture>
+                  <img src="./images/menu-03.jpg"alt="">
+                </picture>
+                <div class="menu__body-item-texts">
+                  <div class="menu__body-item-texts-title">
+                    Mango
+                  </div>
+                  <div class="menu__body-item-texts-title-j">
+                    マンゴー
+                  </div>
+                  <p class="menu__body-item-texts-p">
+                    カップ ￥400<br>
+                    コーン ￥420
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="menu__body">
+            <div class="menu__body-item scroll-animation-obj scroll-animation-hop">
+              <div class="menu__body-item-img">
+                <picture>
+                  <img src="./images/menu-04.jpg"alt="">
+                </picture>
+                <div class="menu__body-item-texts">
+                  <div class="menu__body-item-texts-title">
+                    Double Vanilla
+                  </div>
+                  <div class="menu__body-item-texts-title-j">
+                    ダブルバニラ
+                  </div>
+                  <p class="menu__body-item-texts-p">
+                    カップ ￥460<br>
+                    コーン ￥490
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="menu__body-item scroll-animation-obj scroll-animation-hop">
+              <div class="menu__body-item-img">
+                <picture>
+                  <img src="./images/menu-05.jpg"alt="">
+                </picture>
+                <div class="menu__body-item-texts">
+                  <div class="menu__body-item-texts-title">
+                    Caramel 
+                  </div>
+                  <div class="menu__body-item-texts-title-j">
+                    キャラメル
+                  </div>
+                  <p class="menu__body-item-texts-p">
+                    カップ ￥430<br>
+                    コーン ￥460
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="menu__body-item scroll-animation-obj scroll-animation-hop">
+              <div class="menu__body-item-img">
+                <picture>
+                  <img src="./images/menu-06.jpg"alt="">
+                </picture>
+                <div class="menu__body-item-texts">
+                  <div class="menu__body-item-texts-title">
+                    Coconut Berry  
+                  </div>
+                  <div class="menu__body-item-texts-title-j">
+                    ココナッツベリー
+                  </div>
+                  <p class="menu__body-item-texts-p">
+                    カップ ￥520<br>
+                    コーン ￥550
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- shop -->
+        <section class="shop position-now " id="shop">
+          <h2 class="shop__title scroll-animation-obj scroll-animation-hop">Shop</h2>
+          <div class="shop__body">
+            <div class="shop__body-slider scroll-animation-obj scroll-animation-hop">
+              <ul class="shop__body-slider-list">
+                <li class="current item shop__body-slider-list-item "><img src="./images/shop-01.jpg"></li>
+                <li class="item shop__body-slider-list-item"><img src="./images/shop-02.jpg"></li>
+                <li class="item shop__body-slider-list-item"><img src="./images/shop-03.jpg"></li>
+                <li class="item shop__body-slider-list-item"><img src="./images/shop-04.jpg"></li>
+              </ul>
+              <div class="buttons">
+                <button type="button" id=prev class="button prev"></button>
+                <button type="button" id=next class="button next"></button>
+              </div>
+            </div>
+            <div class="shop__body-texts scroll-animation-obj scroll-animation-hop">
+              <div class="shop__body-texts-p">
+                Mr.Ice Creamは東京都の麻布十番駅から徒歩15分の静かな住宅街の中にあります。<br><br>
+
+                1階がショップ。2階が42席の広大なイートインスペースになっております。店内のデザインはフランスの著名建築家エバン・グレゴリーム氏に、「都会の森」をテーマにデザインして頂きました。<br><br>
+                
+                くつろぎやすい空間を用意しましたので、是非一度お越しください。
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- access -->
+        <section class="access position-now" id="access">
+          <h2 class="access__title scroll-animation-obj scroll-animation-hop">Access</h2>
+          <div class="access__body">
+            <div class="access__body-map scroll-animation-obj scroll-animation-hop">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12967.389207344419!2d139.7368813!3d35.6561336!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x838ce344a31bc24e!2z6bq75biD5Y2B55Wq6aeF!5e0!3m2!1sja!2sjp!4v1595212951563!5m2!1sja!2sjp" width="769" height="533" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="access__body-texts scroll-animation-obj scroll-animation-hop">
+              <div class="access__body-texts-p">
+                <span>住所：</span>東京都港区麻布十番〇〇〇〇〇〇〇〇〇<br>
+                <span>電話番号：</span>〇〇〇〇<br>
+                <span>営業時間：</span>10:00～23:30<br>
+                <span>定休日:</span>水曜
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- instagram -->
+        <div class="instagram">
+          <div class="instagram__wrapper">
+            <div class="instagram__wrapper-img scroll-animation-obj scroll-animation-hop">
+              <img src="./images/instagram-w.png"alt="Instagram">
+            </div>
+            <a href="#" class="instagram__account scroll-animation-obj scroll-animation-hop">@mr_icecream</a>
+            <div class="instagram__bodys">
+              <div class="instagram__body1">
+                <div class="instagram__body-item scroll-animation-obj scroll-animation-hop">
+                  <div class="instagram__body-item-img">
+                    <picture>
+                      <img src="./images/instagram-01.jpg"alt="">
+                    </picture>
+                  </div>
+                </div>
+                <div class="instagram__body-item scroll-animation-obj scroll-animation-hop">
+                  <div class="instagram__body-item-img">
+                    <picture>
+                      <img src="./images/instagram-02.jpg"alt="">
+                    </picture>
+                  </div>
+                </div>
+                <div class="instagram__body-item scroll-animation-obj scroll-animation-hop">
+                  <div class="instagram__body-item-img">
+                    <picture>
+                      <img src="./images/instagram-03.jpg"alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            <div class="instagram__body2">
+              <div class="instagram__body-item scroll-animation-obj scroll-animation-hop">
+                <div class="instagram__body-item-img">
+                  <picture>
+                    <img src="./images/instagram-04.jpg"alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="instagram__body-item scroll-animation-obj scroll-animation-hop">
+                <div class="instagram__body-item-img">
+                  <picture>
+                    <img src="./images/instagram-05.jpg"alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="instagram__body-item scroll-animation-obj scroll-animation-hop">
+                <div class="instagram__body-item-img">
+                  <picture>
+                    <img src="./images/instagram-06.jpg"alt="">
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__wrap">
+        <a class="footer__logo"href="#"> Mr.IceCream</a>
+        <div class="footer__sns">
+          <a href="">
+            <img src="./images/Twitter-w.png">
+          </a>
+          <a href="">
+            <img src="./images/instagram-w.png">
+          </a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
