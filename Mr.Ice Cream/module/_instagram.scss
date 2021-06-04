@@ -1,0 +1,87 @@
+.instagram{
+    text-align: center;
+    margin:0 auto;
+    padding-top:104px;
+    &__wrapper{
+        margin:0 auto;
+        background-color: $color-title;
+        &-img{
+            padding-top: 50px;
+            padding-bottom: 10px;
+            img{
+                width: 72px;
+            }
+        }
+    }
+    &__account{
+        padding-bottom: 72px;
+        font-size: 32px;
+        font-family: $font-Montserrat;
+        font-weight: bold;
+        line-height: o.384;
+        text-decoration: none;
+        color:$color-footer;
+        &:hover{
+            opacity: 50%;
+        }
+    }
+    &__bodys{
+        text-align: center;
+    }
+    &__body1{
+        display: flex;
+        justify-content: space-between;
+        margin:0 auto;
+        width: 800px;
+        padding-top:30px;
+        padding-bottom: 70px;
+    }
+    &__body2{
+        display: flex;
+        margin:0 auto;
+        justify-content: space-between;
+        width: 800px;
+        padding-bottom: 70px;
+    }
+}
+
+@include medium{
+    .instagram{
+        &__body1{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        &__body2{
+            width:100%;
+            img{
+                width:100%;
+            }
+        }
+    }
+}
+
+@include mq(small){
+    .instagram{
+        &__account{
+            font-size: 23px;
+        }
+        &__body1{
+            flex-direction: column;
+            width: 100%;
+            padding-bottom: 7px;
+            img{
+                width: 100%;
+            }
+        }
+        &__body2{
+            flex-direction: column;
+            width:100%;
+            padding-bottom: 7px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
